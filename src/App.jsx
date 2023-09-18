@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import 'mind-ar/dist/mindar-image.prod.js';
+import 'aframe';
+import 'mind-ar/dist/mindar-image-aframe.prod.js';
 
 function App() {
   return (
@@ -9,6 +12,7 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.1.5/dist/mindar-image.prod.js"></script>
       </head>
       <body>
         <a-scene mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/card-example/card.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
